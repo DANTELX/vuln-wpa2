@@ -1,0 +1,40 @@
+@import "/css/normalize.css";
+@import "/css/main.css";
+
+.main {
+  width: 80%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--color4);
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: min(60%, 600px);
+}

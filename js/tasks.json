@@ -1,0 +1,26 @@
+{
+  "task1": {
+    "id": "task1",
+    "description": "<span class='st-r'>Configure</span> the wireless interface",
+    "completed": false,
+    "added": false
+  },
+  "task2": {
+    "id": "task2",
+    "description": "Get information about the wireless <span class='st-r'>networks</span>",
+    "completed": false,
+    "added": false
+  },
+  "task3": {
+    "id": "task3",
+    "description": "<span class='st-r'>Capture</span> the authentication handshake",
+    "completed": false,
+    "added": false
+  },
+  "task4": {
+    "id": "task4",
+    "description": "<span class='st-r'>Crack</span> the password",
+    "completed": false,
+    "added": false
+  }
+}

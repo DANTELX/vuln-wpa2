@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methodology - VULN-WPA2</title>
+    <link rel="stylesheet" href="css/methodology.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>TERMINOLOGY</h1>
+      <p>
+        Before starting with the methodology you should learn some basic
+        terminology so you know what we are talking about. :)
+      </p>
+      <h2>What is WPA2?</h2>
+      <p>
+        Wi-Fi Protected Access 2 (WPA 2) is one of many security protocols used
+        to secure network connections. This protocol ensures that all your sent
+        or received data is encrypted over the Advanced Encryption System (AES).
+      </p>
+      <h2>What is PSK?</h2>
+      <p>
+        Pre-Shared Key (PSK) is an encryption technique used along with the WPA2
+        protocol to authenticate users in wireless networks. In this process, a
+        key is shared to verify the client's identity. WPA2-PSK and WPA Personal
+        refer to the same thing.
+      </p>
+      <h2>What is a network interface card (NIC)?</h2>
+      <p>
+        The network interface for short is the piece of hardware that gives us
+        network capabilities. In Linux, the ethernet-based interfaces are
+        commonly known as "eth" and the wireless interfaces are known as "wlan".
+        For our purposes, we are gonna be using the wlan interface because we
+        are dealing with wireless connections. Additionally, some wireless
+        interfaces can monitor packages that will allow us to capture
+        information by nearby wireless devices. Like a 4-way handshake.
+      </p>
+      <h2>What is a 4-way handshake?</h2>
+      <p>
+        In this context, a 4-way handshake is the first four authentication
+        messages between the client and the Access Point (AP). This is very
+        important to know because here is the weakness of the WPA2 Protocol.
+        Because the encrypted password is shared when a 4-way handshake is
+        exchanged, we can capture that handshake and crack the password with the
+        help of a dictionary attack.
+      </p>
+      <h2>What is a deauth attack?</h2>
+      <p>
+        A deauth attack is a kind of denial of service attack (DoS) interrupting
+        the communication between clients. The attacker can send
+        de-authentication frames to an AP forcing a client to disconnect from
+        the network.
+      </p>
+      <h1>METHODOLOGY</h1>
+      <p>
+        As you may know this website is focused on teaching you the basics of
+        cracking a WPA2-PSK network. The process to achieve this goal can be
+        divided into 4 easy steps:
+      </p>
+      <img src="img/diagram1.png" alt="diagram1" />
+      <p>
+        1. The first thing you should do is, configure the wireless interface
+        since most of the following commands require a properly configured
+        interface. Make sure that you set it so it can capture packages.
+      </p>
+      <p>
+        2. Then, you have to get detailed information about your target network.
+        The most important information for our goal is the MAC address and the
+        channel number.
+      </p>
+      <p>
+        3. Now that you have those two pieces of information, you can try to
+        capture the handshake. You can wait a long time till you get a
+        handshake, or you can perform a deauth attack to speed up the process.
+      </p>
+      <p>
+        4. Finally, after getting that handshake you can proceed to the cracking
+        step. For this, you will need two files: a wordlist and a .cap file
+        containing the handshake.
+      </p>
+      <img src="img/diagram2.png" alt="diagram2" />
+      <p>
+        This website is intended to encourage research and practice rather than
+        being a simple tutorial. The information provided should be enough to
+        complete all the tasks, but if you have any questions you can always
+        look it up on the internet. Good luck.
+      </p>
+      <h2>Disclaimer:</h2>
+      <p>
+        All information displayed on this website is for
+        <b>educational purposes</b>. I am not responsible for any illegal
+        actions.
+      </p>
+    </main>
+  </body>
+</html>

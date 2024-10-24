@@ -1,0 +1,50 @@
+{
+  "iwconfig": {
+    "whatis": "configure a wireless network interface",
+    "syntax": "&emsp;iwconfig [<span class='st-i'>interface</span>]<br>&emsp;iwconfig <span class='st-i'>interface</span> [mode] <span class='st-i'>mode</span>",
+    "options": "&emsp;<span class='st-r'>mode</span> <span class='st-i'>mode</span> - change operating mode of the device (managed|monitor)<br>&emsp;managed: Provide conectivity to the wireless network<br>&emsp;monitor: Passively capture all packets",
+    "example": "&emsp;iwconfig lo<br>&emsp;iwconfig eth0 mode managed"
+  },
+  "wpacrack": {
+    "whatis": "tools to assess WiFi network security",
+    "syntax": "&emsp;wpacrack <span class='st-i'>mode</span> <span class='st-i'>options</span>",
+    "options": "<br>&emsp;<span class='st-r'>kill</span> - kill all possible programs that could interfere with the wireless card<br><br>&emsp;<span class='st-r'>capture</span> - packet capture tool<br>&emsp;Ex. wpacrack capture -b <span class='st-i'>bssid</span> -c <span class='st-i'>channel</span> [-d <span class='st-i'>boolean</span>]<br><br>&emsp;<span class='st-r'>netwoks</span> - list all available wireless networks<br>&emsp;Ex. wpacrack netwoks<br><br>&emsp;<span class='st-r'>crack</span> - WPA-PSK key cracker<br>&emsp;Ex. wpacrack crack -f <span class='st-i'>file</span> -w <span class='st-i'>file</span><br><br>&emsp;-b <span class='st-i'>bssid</span><br>&emsp;Select the target network based on the MAC address<br><br>&emsp;-c <span class='st-i'>channel</span><br>&emsp;Indicate the channel to listen to<br><br>&emsp;-w <span class='st-i'>file</span><br>&emsp;Dictionary file name for wpa cracking<br><br>&emsp;-f <span class='st-i'>file</span><br>&emsp;.cap file<br><br>&emsp;-d <span class='st-i'>boolean</span><br>&emsp;Inject ARP-request packets to deauth clients",
+    "example": "&emsp;wpacrack networks<br>&emsp;wpacrack kill<br>&emsp;wpacrack capture -b 7B:DE:67:04:6E:AD -c 2"
+  },
+  "ls": {
+    "whatis": "list files",
+    "syntax": "&emsp;ls",
+    "options": "&emsp;No options",
+    "example": "&emsp;ls"
+  },
+  "cat": {
+    "whatis": "print file content in terminal",
+    "syntax": "&emsp;cat [<span class='st-i'>file</span>]",
+    "options": "&emsp;No options",
+    "example": "&emsp;file file.txt"
+  },
+  "clear": {
+    "whatis": "clear terminal screen",
+    "syntax": "&emsp;clear [option]",
+    "options": "&emsp;No options",
+    "example": "&emsp;help clear"
+  },
+  "commands": {
+    "whatis": "list all avaliable commands",
+    "syntax": "&emsp;commands",
+    "options": "&emsp;No options",
+    "example": "&emsp;commands"
+  },
+  "help": {
+    "whatis": "output a usage message",
+    "syntax": "&emsp;help <span class='st-i'>command</span>",
+    "options": "&emsp;No options",
+    "example": "&emsp;help clear"
+  },
+  "restart": {
+    "whatis": "restart the application",
+    "syntax": "&emsp;restart",
+    "options": "&emsp;No options",
+    "example": "&emsp;restart"
+  }
+}

@@ -1,0 +1,10 @@
+@import url(/css/normalize.css);
+@import url(/css/main.css);
+
+h1 {
+  font-size: min(3.5vw, 40px);
+}
+
+p {
+  font-size: min(2vw, 25px);
+}
